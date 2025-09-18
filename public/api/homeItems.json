@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Mobile", "image": "https://via.placeholder.com/150?text=Mobile" },
+  { "id": 2, "name": "Laptops", "image": "https://via.placeholder.com/150?text=Laptops" },
+  { "id": 3, "name": "Mobile Accessories", "image": "https://via.placeholder.com/150?text=Mobile+Accessories" },
+  { "id": 4, "name": "Laptop Accessories", "image": "https://via.placeholder.com/150?text=Laptop+Accessories" },
+  { "id": 5, "name": "Tea Product", "image": "https://via.placeholder.com/150?text=Tea+Product" },
+  { "id": 6, "name": "Grocery Products", "image": "https://via.placeholder.com/150?text=Grocery+Products" },
+  { "id": 7, "name": "Kitchen Appliances", "image": "https://via.placeholder.com/150?text=Kitchen+Appliances" },
+  { "id": 8, "name": "Home Appliances", "image": "https://via.placeholder.com/150?text=Home+Appliances" },
+  { "id": 9, "name": "Fashion", "image": "https://via.placeholder.com/150?text=Fashion" },
+  { "id": 10, "name": "Other", "image": "https://via.placeholder.com/150?text=Other" }
+]

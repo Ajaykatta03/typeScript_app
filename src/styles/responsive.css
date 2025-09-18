@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+#navbarNav{
+    margin-left: 3.5rem;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #2196F3 !important;
+}
+.nav-link.active {
+ font-weight: bold;
+ color: #fdfdfdff;
+ border-bottom: 2px solid #8dbaffff;
+}
+@media (max-width: 600px) {
+  .item-grid {
+    grid-template-columns: 1fr;
+  }
+}
