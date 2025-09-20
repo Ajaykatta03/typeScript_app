@@ -1,12 +1,182 @@
 [
-  { "id": 1, "name": "Item1" },
-  { "id": 2, "name": "Item2" },
-  { "id": 3, "name": "Item3" },
-  { "id": 4, "name": "Item4" },
-  { "id": 5, "name": "Item5" },
-  { "id": 6, "name": "Item6" },
-  { "id": 7, "name": "Item7" },
-  { "id": 8, "name": "Item8" },
-  { "id": 9, "name": "Item9" },
-  { "id": 10, "name": "Item10" }
+  {
+    "id": 1,
+    "name": "Item1",
+    "price": 4999,
+    "finalPrice": 4499,
+    "image": "https://via.placeholder.com/150",
+    "description": "Premium wooden table crafted with high-quality teak wood.",
+    "specifications": {
+      "width": "120 cm",
+      "height": "75 cm",
+      "thickness": "3 cm"
+    },
+    "details": "Durable dining table suitable for 6 people with polished finish.",
+    "rating": 4.5,
+    "ratingCount": 230,
+    "discount": "10%",
+    "offers": ["Free delivery", "1-year warranty"]
+  },
+  {
+    "id": 2,
+    "name": "Item2",
+    "price": 6999,
+    "finalPrice": 5949,
+    "image": "https://via.placeholder.com/150",
+    "description": "Ergonomic office chair with adjustable height and lumbar support.",
+    "specifications": {
+      "width": "65 cm",
+      "height": "110 cm",
+      "thickness": "6 cm"
+    },
+    "details": "Mesh back support for comfort during long working hours.",
+    "rating": 4.3,
+    "ratingCount": 145,
+    "discount": "15%",
+    "offers": ["No cost EMI", "10-day replacement"]
+  },
+  {
+    "id": 3,
+    "name": "Item3",
+    "price": 799,
+    "finalPrice": 759,
+    "image": "https://via.placeholder.com/150",
+    "description": "Stainless steel water bottle with insulated double wall.",
+    "specifications": {
+      "width": "7 cm",
+      "height": "25 cm",
+      "thickness": "0.3 cm"
+    },
+    "details": "Keeps beverages hot for 12 hours and cold for 24 hours.",
+    "rating": 4.1,
+    "ratingCount": 520,
+    "discount": "5%",
+    "offers": ["Buy 2 Get 5% Off"]
+  },
+  {
+    "id": 4,
+    "name": "Item4",
+    "price": 34999,
+    "finalPrice": 27999,
+    "image": "https://via.placeholder.com/150",
+    "description": "LED smart TV with 4K Ultra HD resolution and HDR support.",
+    "specifications": {
+      "width": "140 cm",
+      "height": "80 cm",
+      "thickness": "5 cm"
+    },
+    "details": "Comes with built-in streaming apps and voice control remote.",
+    "rating": 4.7,
+    "ratingCount": 90,
+    "discount": "20%",
+    "offers": ["Free installation", "2-year warranty"]
+  },
+  {
+    "id": 5,
+    "name": "Item5",
+    "price": 8999,
+    "finalPrice": 7379,
+    "image": "https://via.placeholder.com/150",
+    "description": "Noise-cancelling wireless headphones with 40 hrs battery life.",
+    "specifications": {
+      "width": "18 cm",
+      "height": "20 cm",
+      "thickness": "4 cm"
+    },
+    "details": "Over-ear headphones with deep bass and quick charge support.",
+    "rating": 4.6,
+    "ratingCount": 310,
+    "discount": "18%",
+    "offers": ["Free case", "6-month Spotify Premium"]
+  },
+  {
+    "id": 6,
+    "name": "Item6",
+    "price": 10999,
+    "finalPrice": 9679,
+    "image": "https://via.placeholder.com/150",
+    "description": "Compact microwave oven with grill and auto-cook options.",
+    "specifications": {
+      "width": "45 cm",
+      "height": "30 cm",
+      "thickness": "5 cm"
+    },
+    "details": "20L capacity ideal for families and energy-efficient design.",
+    "rating": 4.2,
+    "ratingCount": 200,
+    "discount": "12%",
+    "offers": ["Free cookware set", "Extended warranty option"]
+  },
+  {
+    "id": 7,
+    "name": "Item7",
+    "price": 24999,
+    "finalPrice": 22999,
+    "image": "https://via.placeholder.com/150",
+    "description": "Smartphone with 6.5-inch AMOLED display and 128GB storage.",
+    "specifications": {
+      "width": "7.5 cm",
+      "height": "16 cm",
+      "thickness": "0.8 cm"
+    },
+    "details": "Triple camera setup with AI-enhanced night mode photography.",
+    "rating": 4.4,
+    "ratingCount": 850,
+    "discount": "8%",
+    "offers": ["Free screen protector", "Exchange offer available"]
+  },
+  {
+    "id": 8,
+    "name": "Item8",
+    "price": 15999,
+    "finalPrice": 11999,
+    "image": "https://via.placeholder.com/150",
+    "description": "Luxury king-size mattress with memory foam comfort.",
+    "specifications": {
+      "width": "180 cm",
+      "height": "25 cm",
+      "thickness": "20 cm"
+    },
+    "details": "Provides orthopedic support for healthy spine alignment.",
+    "rating": 4.8,
+    "ratingCount": 540,
+    "discount": "25%",
+    "offers": ["Free pillows", "10-year warranty"]
+  },
+  {
+    "id": 9,
+    "name": "Item9",
+    "price": 89999,
+    "finalPrice": 80999,
+    "image": "https://via.placeholder.com/150",
+    "description": "High-performance gaming laptop with RTX graphics card.",
+    "specifications": {
+      "width": "36 cm",
+      "height": "24 cm",
+      "thickness": "2 cm"
+    },
+    "details": "Comes with 16GB RAM, 1TB SSD, and customizable RGB keyboard.",
+    "rating": 4.7,
+    "ratingCount": 120,
+    "discount": "10%",
+    "offers": ["Free gaming mouse", "1-year Game Pass subscription"]
+  },
+  {
+    "id": 10,
+    "name": "Item10",
+    "price": 2999,
+    "finalPrice": 2099,
+    "image": "https://via.placeholder.com/150",
+    "description": "Portable Bluetooth speaker with waterproof design.",
+    "specifications": {
+      "width": "10 cm",
+      "height": "12 cm",
+      "thickness": "4 cm"
+    },
+    "details": "Delivers powerful bass and up to 15 hours of playtime.",
+    "rating": 4.3,
+    "ratingCount": 430,
+    "discount": "30%",
+    "offers": ["Extra 5% off on UPI payment"]
+  }
 ]

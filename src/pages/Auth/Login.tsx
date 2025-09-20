@@ -1,20 +1,6 @@
-// import React from 'react';
-// import { useAuth } from '../context/AuthContext';
-
-// const Login: React.FC = () => {
-//   const { login } = useAuth();
-//   return (
-//     <div>
-//       <h2>Login Page</h2>
-//       <button onClick={login}>Login</button>
-//     </div>
-//   );
-// };
-
-// export default Login;
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 
 const Login: React.FC = () => {
   const auth = useContext(AuthContext)!;
@@ -23,19 +9,6 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-// const handleSubmit = async (e: React.FormEvent) => {
-//     e.preventDefault();
-//     try {
-//         const success = await auth.login(email, password);
-//         if (success) {
-//             navigate('/home');
-//         } else {
-//             setError('Invalid credentials');
-//         }
-//     } catch (err) {
-//         setError('An error occurred during login');
-//     }
-// };
 const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     auth.login(email, password);

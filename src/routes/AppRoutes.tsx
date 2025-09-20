@@ -1,58 +1,40 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import Login from '../pages/Login';
-import Signup from '../pages/Signup';
-import CategoryPage from '../pages/CategoryPage';
-import ProtectedRoute from '../components/ProtectedRoute';
-import Notification from '../pages/Notification';
-import About from '../pages/About';
-import Report from '../pages/Report';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Home from '../pages/Home/Home';
+import CategoryPage from '../pages/CategoryPages/CategoryPage';
+import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
+import Notification from '../pages/Notification/Notification';
+import About from '../pages/About/About';
+import Report from '../pages/Report/Report';
+import ItemView from '../pages/ItemView/ItemView';
 
 const AppRoutes: React.FC = () => (
     <Router>
         <Routes>
+            {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
             <Route 
-                path="/home" 
-                element={
-                    // <ProtectedRoute>
-                        <Home />
-                    // </ProtectedRoute>
-                } 
+            path="/home" 
+            element={<Home />} 
             />
             <Route 
-                path="/report" 
-                element={
-                    // <ProtectedRoute>
-                        <Report />
-                    // </ProtectedRoute>
-                } 
+            path="/report" 
+            element={<Report />} 
             />
             <Route 
-                path="/about" 
-                element={
-                    // <ProtectedRoute>
-                        <About />
-                    // </ProtectedRoute>
-                } 
+            path="/about" 
+            element={<About />} 
             />
             <Route 
-                path="/notification" 
-                element={
-                    // <ProtectedRoute>
-                        <Notification />
-                    // </ProtectedRoute>
-                } 
+            path="/notification" 
+            element={<Notification />} 
             />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
             <Route 
-                path="/category/:name" 
-                element={
-                    // <ProtectedRoute>
-                        <CategoryPage />
-                    // </ProtectedRoute>
-                } 
+            path="/category/:name" 
+            element={<CategoryPage />} 
+            />
+            <Route 
+            path="/ItemView/:name/:id" 
+            element={<ItemView />} 
             />
         </Routes>
     </Router>

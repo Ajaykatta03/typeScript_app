@@ -19,6 +19,12 @@ body {
  color: #fdfdfdff;
  border-bottom: 2px solid #8dbaffff;
 }
+.category-description{
+    font-size: 0.575em;
+}
+.item-details{
+  background-color: #f8f9fa;
+}
 @media (max-width: 600px) {
   .item-grid {
     grid-template-columns: 1fr;

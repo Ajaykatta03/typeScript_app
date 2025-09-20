@@ -1,6 +1,5 @@
 import React from 'react';
-import useFetchData from '../hooks/useFetchJson';
-import ItemGrid from '../components/ItemGrid';
+import useFetchData from '../../hooks/useFetchJson';
 
 interface Item {
   id: number;
@@ -9,7 +8,8 @@ interface Item {
 }
 
 const Home: React.FC = () => {
-  const { data: items, loading, error } = useFetchData<Item[]>("/api/homeItems.json");
+  // const { data: items, loading, error } = useFetchData<Item[]>("/api/homeItems.json");
+  const { data: items, loading, error } = useFetchData<Item[]>("../../api/homeItems.json");
     console.log(items); 
   return (
     <div className="container mt-4">
@@ -29,7 +29,6 @@ const Home: React.FC = () => {
           </div>
         ))}
       </div>
-      {/* <ItemGrid items={items || []} /> */}
     </div>
   );
 };
