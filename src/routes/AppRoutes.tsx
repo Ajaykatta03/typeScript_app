@@ -7,6 +7,8 @@ import Notification from '../pages/Notification/Notification';
 import About from '../pages/About/About';
 import Report from '../pages/Report/Report';
 import ItemView from '../pages/ItemView/ItemView';
+import Wishlist from '../pages/Wishlist/Wishlist';
+import Cart from '../pages/Cart/Cart';
 
 const AppRoutes: React.FC = () => (
     <Router>
@@ -35,6 +37,14 @@ const AppRoutes: React.FC = () => (
             <Route 
             path="/ItemView/:name/:id" 
             element={<ItemView />} 
+            />
+            <Route 
+            path="/wishlist" 
+            element={<Wishlist />} 
+            />
+            <Route 
+            path="/cart" 
+            element={<Cart />} 
             />
         </Routes>
     </Router>

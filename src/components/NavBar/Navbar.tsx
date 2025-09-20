@@ -13,11 +13,18 @@ const Navbar: React.FC = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
-            {['home', 'about', 'report', 'notification'].map((link) => (
+            {['home', 'notification', 'wishlist', 'cart'].map((link) => (
               <li className="nav-item" key={link}>
                 <a
                   className={`nav-link ${window.location.pathname === `/${link}` ? 'active' : ''}`}
                   href={`/${link}`}
+                  // style={
+                  //   link === 'wishlist' ? {
+                  //     color: '#ff7043', fontWeight: 600
+                  //   } : link === 'cart' ? {
+                  //     color: '#1976d2', fontWeight: 600
+                  //   } : {}
+                  // }
                 >
                   {link.charAt(0).toUpperCase() + link.slice(1)}
                 </a>
