@@ -1,16 +1,10 @@
 import React from 'react';
 import useFetchData from '../../hooks/useFetchJson';
-
-interface Item {
-  id: number;
-  name: string;
-  image: string;
-}
+import { HomeItem } from './HomeTypes';
 
 const Home: React.FC = () => {
-  // const { data: items, loading, error } = useFetchData<Item[]>("/api/homeItems.json");
-  const { data: items, loading, error } = useFetchData<Item[]>("../../api/homeItems.json");
-    console.log(items); 
+  const { data: items, loading, error } = useFetchData<HomeItem[]>("../../api/homeItems.json");
+ 
   return (
     <div className="container mt-4">
       {loading && <div>Loading...</div>}

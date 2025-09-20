@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { WishlistItem } from './WishListTypes';
 
 const Wishlist: React.FC = () => {
-  const [wishlist, setWishlist] = useState<any[]>([]);
+  const [wishlist, setWishlist] = useState<WishlistItem[]>([]);
 
   useEffect(() => {
     const stored = localStorage.getItem('wishlist');
@@ -10,7 +11,7 @@ const Wishlist: React.FC = () => {
 
   return (
     <div className="container mt-4">
-      <h2 style={{ fontWeight: 700, marginBottom: '18px' }}>My Wishlist</h2>
+      {/* <h2 style={{ fontWeight: 700, marginBottom: '18px' }}>My Wishlist</h2> */}
       <div className="row">
         {wishlist.length === 0 && <div className="col-12">No items in wishlist.</div>}
         {wishlist.map(item => (

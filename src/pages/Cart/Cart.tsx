@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { CartItem } from './CartItemTypes';
 
 const Cart: React.FC = () => {
-  const [cart, setCart] = useState<any[]>([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
 
   useEffect(() => {
     const stored = localStorage.getItem('cart');
@@ -10,7 +11,7 @@ const Cart: React.FC = () => {
 
   return (
     <div className="container mt-4">
-      <h2 style={{ fontWeight: 700, marginBottom: '18px' }}>My Cart</h2>
+      {/* <h2 style={{ fontWeight: 700, marginBottom: '18px' }}>My Cart</h2> */}
       <div className="row">
         {cart.length === 0 && <div className="col-12">No items in cart.</div>}
         {cart.map(item => (
