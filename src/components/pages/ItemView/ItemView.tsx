@@ -1,11 +1,11 @@
 import React from 'react';
-import useFetchData from '../../hooks/useFetchJson';
-import { calculateFinalPrice, ItemType } from './ItemType';
 import { useParams } from 'react-router-dom';
-import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import { ItemInterface } from '../../ts/ItemType';
+import useFetchData from '../../../hooks/useFetchJson';
+import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
 
 const ItemView: React.FC = () => {
-    const itemsData = useFetchData<ItemType[]>("/api/items.json");
+    const itemsData = useFetchData<ItemInterface[]>("/api/items.json");
     const { id } = useParams<{ id: string }>();
     const { name } = useParams<{ name: string }>();
 
@@ -14,10 +14,10 @@ const ItemView: React.FC = () => {
   const itemId = Number(id);
 
   // Find the item by id
-  const item: ItemType | undefined = itemsData && itemsData.data?.find((i) => i.id === itemId);
+  const item: ItemInterface | undefined = itemsData && itemsData.data?.find((i) => i.id === itemId);
 
-  if (item) {
-    item.finalPrice = calculateFinalPrice(item.price, item.discount);
+  if (item && !item.finalPrice) {
+    item.finalPrice = parseFloat((item.price - (item.price * parseFloat(item.discount) / 100)).toFixed(2));
   }
   // Modal close handler
   const closeModal = () => setModal({ show: false, message: "" });

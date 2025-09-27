@@ -1,28 +1,13 @@
 import React, { use, useEffect, useState } from 'react';
-import useFetchData from '../../hooks/useFetchJson';
-import { CategoryType } from './CategoryTypes';
-import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import { useParams } from 'react-router-dom';
-
-
-// interface Item {
-//   id: number;
-//   name: string;
-//   description: string;
-//   price: number;
-//   image?: string;
-//   originalPrice?: number;
-//   discount?: number;
-//   rating?: number;
-//   ratingCount?: number;
-//   color?: string;
-//   unavailable?: boolean;
-// }
+import { CategoryInterface } from '../../ts/CategoryTypes';
+import useFetchData from '../../../hooks/useFetchJson';
+import Breadcrumbs from '../../Breadcrumbs/Breadcrumbs';
 
 const CategoryPage: React.FC = () => {
   const { name } = useParams<{ name: string }>();
 
-    const { data: items, loading, error } = useFetchData<CategoryType[]>("/api/items.json");
+    const { data: items, loading, error } = useFetchData<CategoryInterface[]>("/api/items.json");
     console.log('name', name);
     return (
       <div className="container mt-4">

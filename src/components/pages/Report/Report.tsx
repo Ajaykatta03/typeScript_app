@@ -1,3 +1,4 @@
+// ...existing code...
 import React from 'react';
 
 const Report: React.FC = () => {

@@ -1,9 +1,10 @@
+// ...existing code...
 import React from 'react';
-import useFetchData from '../../hooks/useFetchJson';
-import { HomeItem } from './HomeTypes';
+import { HomeInterface } from '../../ts/HomeTypes';
+import useFetchData from '../../../hooks/useFetchJson';
 
 const Home: React.FC = () => {
-  const { data: items, loading, error } = useFetchData<HomeItem[]>("../../api/homeItems.json");
+  const { data: items, loading, error } = useFetchData<HomeInterface[]>("../../api/homeItems.json");
  
   return (
     <div className="container mt-4">

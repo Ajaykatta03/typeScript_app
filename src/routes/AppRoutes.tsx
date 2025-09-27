@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Home from '../pages/Home/Home';
-import CategoryPage from '../pages/CategoryPages/CategoryPage';
+import Home from '../components/pages/Home/Home';
+import CategoryPage from '../components/pages/CategoryPages/CategoryPage';
 import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
-import Notification from '../pages/Notification/Notification';
-import About from '../pages/About/About';
-import Report from '../pages/Report/Report';
-import ItemView from '../pages/ItemView/ItemView';
-import Wishlist from '../pages/Wishlist/Wishlist';
-import Cart from '../pages/Cart/Cart';
+import Notification from '../components/pages/Notification/Notification';
+import About from '../components/pages/About/About';
+import Report from '../components/pages/Report/Report';
+import ItemView from '../components/pages/ItemView/ItemView';
+import Wishlist from '../components/pages/Wishlist/Wishlist';
+import Cart from '../components/pages/Cart/Cart';
 
 const AppRoutes: React.FC = () => (
     <Router>

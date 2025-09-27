@@ -1,8 +1,9 @@
+// ...existing code...
 import React, { useEffect, useState } from 'react';
-import { CartItem } from './CartItemTypes';
+import { CartInterface } from '../../ts/CartItemTypes';
 
 const Cart: React.FC = () => {
-  const [cart, setCart] = useState<CartItem[]>([]);
+  const [cart, setCart] = useState<CartInterface[]>([]);
 
   useEffect(() => {
     const stored = localStorage.getItem('cart');

@@ -1,8 +1,9 @@
+// ...existing code...
 import React, { useEffect, useState } from 'react';
-import { WishlistItem } from './WishListTypes';
+import { WishlistInterface } from '../../ts/WishListTypes';
 
 const Wishlist: React.FC = () => {
-  const [wishlist, setWishlist] = useState<WishlistItem[]>([]);
+  const [wishlist, setWishlist] = useState<WishlistInterface[]>([]);
 
   useEffect(() => {
     const stored = localStorage.getItem('wishlist');
